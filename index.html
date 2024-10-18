@@ -5,71 +5,65 @@
     <meta charset="utf-8">
     <meta name="keywords" content="search engine don't give a fuck">
     <meta name="description" content="Mike Tsyganove portfolio. My projects, books and future plans">
-    <link rel="stylesheet" href="CSS/outlines.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-<header>
-    <q>
-        Hello there 👋
-    </q>
-    <cite>
-        <del>- Obi Wan Kenobi</del>
-    </cite>
-    <table width="100%">
-        <tr>
-            <td width="20%">
-                <!-- for alignment -->
-            </td>
-            <td>
-                <a class="header_link" id="github_link" href="https://github.com/Mick3l">
-                    <img src="resource/github-mark.png" width="60" height="60"/>
-                </a>
-            </td>
-            <td>
-                <a class="header_link" id="linkedin_link" href="">
-                    <img src="resource/linkedin_logo.png" width="70" height="60" align="left"/>
-                </a>
-            </td>
-            <td align="right">
-                <aside>
-                    <nav>
-                        <ul type="none">
-                            <li><a href="#about_me"><h1>About me</h1></a></li>
-                            <li><a href="#work_exp"><h1>Work experience</h1></a></li>
-                            <li><a href="#work_exp"><h1>Education</h1></a></li>
-                            <li><a href="#projects"><h1>Projects</h1></a></li>
-                            <li><a href="#contact_info"><h1>Contact info</h1></a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </td>
-        </tr>
-    </table>
+<body class="body">
+<header class="header">
+    <div class="overview">
+        <span class="links">
+            <a class="links__github" href="https://github.com/Mick3l">
+                <img src="resource/github_logo.png" class="links__github_img"/>
+            </a>
 
-    <div id="about_me">
-        <h3>About me</h3>
-        <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
-            Python
-            and Databases. Eager to contribute to innovative projects in Search Engines and NLP sphere
-            and
-            improve
-            user experiences through effective backend architecture</p>
+            <a class="links__linkedin" href="blocked in russia :((">
+                <img class="links__linkedin_img" src="resource/linkedin_logo.png"/>
+            </a>
+        </span>
+
+        <div class="about_me">
+            <h3 class="about_me__heading">About me</h3>
+            <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
+                Python
+                and Databases. Eager to contribute to innovative projects in Search Engines and NLP sphere
+                and
+                improve
+                user experiences through effective backend architecture</p>
+        </div>
     </div>
+
+    <aside class="side_menu">
+        <p class="side_menu__greeting">Hello there 👋</p>
+        <nav>
+            <ul type="none">
+                <li><a class="side_menu__option" href="#about_me"><h1>About me</h1></a></li>
+                <li><a class="side_menu__option" href="#work_exp"><h1>Work experience</h1></a></li>
+                <li><a class="side_menu__option" href="#work_exp"><h1>Education</h1></a></li>
+                <li><a class="side_menu__option" href="#projects"><h1>Projects</h1></a></li>
+                <li><a class="side_menu__option" href="#contact_info"><h1>Contact info</h1></a></li>
+            </ul>
+        </nav>
+    </aside>
 </header>
-<main>
+<main class="main">
     <article id="info">
         <section id="work_exp">
-            <h3>Work experience</h3>
+            <h3 class="info__heading">Work experience</h3>
             <ol type="1">
                 <li>
-                    Yandex <i>sep 2023 - feb 2024</i> -&gt; Internship in mobile geodata rendering group
+                    <div class="work_exp_place">
+                        <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
+                        <i class="work_exp__date">sep 2023 - feb 2024</i>
+                    </div>
+                    <p class="work_exp__group">Internship in mobile geodata rendering group </p>
                     <ul>
                         <li><strong>Improved</strong> development by introducing deep links into testing app</li>
                         <li><strong>Introduced</strong> new helpful logs that are rendered on map in each tile</li>
                     </ul>
                 </li>
                 <li>
-                    Yandex <i>feb 2024 -&gt; now</i> - Geosearch monetization group
+                    <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
+                    <i class="work_exp__date">feb 2024 - now</i>
+                    <p class="work_exp__group">Geosearch monetization group</p>
                     <ul>
                         <li><strong>Developed</strong> adverts in suggest from scratch</li>
                         <li><strong>Configured</strong> the delivery of advert data from the database to production</li>
@@ -78,38 +72,31 @@
                 </li>
             </ol>
         </section>
-        <section id="education">
-            <h3>Education</h3>
+        <section class="education" id="education">
+            <h3 class="info__heading">Education</h3>
             <code><pre>while alive():
     upgrade()</pre>
-            </code>
-            <code><pre>
-    _    ____   ____ ___ ___      _         _
-   / \  / ___| / ___|_ _|_ _|    / \   _ __| |_
-  / _ \ \___ \| |    | | | |    / _ \ | '__| __|
- / ___ \ ___) | |___ | | | |   / ___ \| |  | |_
-/_/   \_\____/ \____|___|___| /_/   \_\_|   \__|</pre>
             </code>
         </section>
 
         <section id="projects">
-            <h3>Projects</h3>
-
-            <a href="https://github.com/Mick3l/gpu_mandelbrot_render">
-                <div>
-                    <img src="resource/mandelbrot_project.png" width="300" height="300"/>
-                    <p>WinAPI application rendering Mandelbrot fractal on GPU</p>
-                </div>
-            </a>
-            <a href="https://github.com/Mick3l/point_separator/tree/main">
-                <div>
-                    <img src="resource/dot_separator_project.png" width="300" height="300"/>
-                    <p>TKinter application that predicts the separation of points based on ML</p>
-                </div>
-            </a>
+            <h3 class="info__heading">Projects</h3>
+            <div class="projects">
+                <a href="https://github.com/Mick3l/gpu_mandelbrot_render">
+                    <div>
+                        <img src="resource/mandelbrot_project.png" width="300" height="300"/>
+                        <p>WinAPI application rendering Mandelbrot fractal on GPU</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Mick3l/point_separator/tree/main">
+                    <div>
+                        <img src="resource/dot_separator_project.png" width="300" height="300"/>
+                        <p>TKinter application that predicts the separation of points based on ML</p>
+                    </div>
+                </a>
+            </div>
 
         </section>
-
 
     </article>
 

@@ -1,0 +1,110 @@
+/*BODY > * {*/
+/*    outline: 2px solid hotpink;*/
+/*}*/
+
+/*BODY > * > * {*/
+/*    outline: 2px dashed yellowgreen;*/
+/*    outline-offset: -2px;*/
+/*}*/
+
+/*BODY > * > * > * {*/
+/*    outline: 2px dotted steelblue;*/
+/*    outline-offset: -4px;*/
+/*}*/
+
+/*BODY > * > * > * > * {*/
+/*    outline: 2px dotted orange;*/
+/*    outline-offset: -4px;*/
+/*}*/
+
+/*BODY > * > * > * > * > * {*/
+/*    outline: 2px dotted black;*/
+/*    outline-offset: -4px;*/
+/*}*/
+
+.body {
+    font-size: 24px;
+    background-color: #2b2b2b;
+    color: darkgray;
+}
+
+.header {
+    display: flex;
+}
+
+.side_menu {
+    padding-right: 15px;
+    height: 100%;
+    align-self: center;
+    text-align: right;
+}
+
+.side_menu__greeting {
+    color: goldenrod;
+}
+
+.side_menu__option {
+    color: honeydew;
+
+}
+
+.overview {
+    width: 70%;
+}
+
+.about_me {
+
+}
+
+.about_me__heading {
+    color: goldenrod;
+}
+
+.links {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.links__github_img {
+    width: 100px;
+    height: 100px;
+}
+
+.links__linkedin_img {
+    width: 115px;
+    height: 100px;
+}
+
+.main {
+
+}
+
+.info__heading {
+    color: goldenrod;
+}
+
+.work_exp_place {
+    display: flex;
+}
+
+.work_exp__date {
+    background-color: black;
+    color: white;
+    alignment: right;
+}
+
+.work_exp__yandex {
+    padding-right: 200px;
+    width: 80px;
+    height: 30px;
+}
+
+.work_exp__group {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.projects {
+    display: flex;
+}
