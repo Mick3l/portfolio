@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Сайт-портфолио</title>
+    <title>Portfolio</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/style.css"> <!-- for outlines -->
+    <meta name="keywords" content="search engine don't give a fuck">
+    <meta name="description" content="Mike Tsyganove portfolio. My projects, books and future plans">
+    <link rel="stylesheet" href="CSS/outlines.css">
 </head>
 <body>
 <header>
+    <q>
+        Hello there 👋
+    </q>
+    <cite>
+        <del>- Obi Wan Kenobi</del>
+    </cite>
     <table width="100%">
         <tr>
-            <td>
-                <a class="header_link" id="github_link" href="https://github.com/Mick3l">github</a>
+            <td width="20%">
+                <!-- for alignment -->
             </td>
             <td>
-                <a class="header_link" id="linkedin_link" href="">linkedin (blocked in Russia)</a>
+                <a class="header_link" id="github_link" href="https://github.com/Mick3l">
+                    <img src="resource/github-mark.png" width="60" height="60"/>
+                </a>
+            </td>
+            <td>
+                <a class="header_link" id="linkedin_link" href="">
+                    <img src="resource/linkedin_logo.png" width="70" height="60" align="left"/>
+                </a>
             </td>
             <td align="right">
                 <aside>
                     <nav>
                         <ul type="none">
-                            <li><a href="#about_me">About me</a></li>
-                            <li><a href="#work_exp">Work experience</a></li>
-                            <li><a href="#work_exp">Education</a></li>
+                            <li><a href="#about_me"><h1>About me</h1></a></li>
+                            <li><a href="#work_exp"><h1>Work experience</h1></a></li>
+                            <li><a href="#work_exp"><h1>Education</h1></a></li>
+                            <li><a href="#projects"><h1>Projects</h1></a></li>
+                            <li><a href="#contact_info"><h1>Contact info</h1></a></li>
                         </ul>
                     </nav>
                 </aside>
             </td>
         </tr>
     </table>
+
+    <div id="about_me">
+        <h3>About me</h3>
+        <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
+            Python
+            and Databases. Eager to contribute to innovative projects in Search Engines and NLP sphere
+            and
+            improve
+            user experiences through effective backend architecture</p>
+    </div>
 </header>
 <main>
     <article id="info">
-        <div id="about_me">
-            <h3>About me</h3>
-            <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
-                Python
-                and Databases. Eager to contribute to innovative projects in Search Engines and NLP sphere
-                and
-                improve
-                user experiences through effective backend architecture</p>
-        </div>
         <section id="work_exp">
             <h3>Work experience</h3>
             <ol type="1">
@@ -72,15 +90,23 @@
  / ___ \ ___) | |___ | | | |   / ___ \| |  | |_
 /_/   \_\____/ \____|___|___| /_/   \_\_|   \__|</pre>
             </code>
-
-            <q>
-                <del>Вот так вот, вот так вот, вот так вот</del>
-            </q>
-            <cite>- Александр Невский</cite>
         </section>
 
-        <section>
+        <section id="projects">
             <h3>Projects</h3>
+
+            <a href="https://github.com/Mick3l/gpu_mandelbrot_render">
+                <div>
+                    <img src="resource/mandelbrot_project.png" width="300" height="300"/>
+                    <p>WinAPI application rendering Mandelbrot fractal on GPU</p>
+                </div>
+            </a>
+            <a href="https://github.com/Mick3l/point_separator/tree/main">
+                <div>
+                    <img src="resource/dot_separator_project.png" width="300" height="300"/>
+                    <p>TKinter application that predicts the separation of points based on ML</p>
+                </div>
+            </a>
 
         </section>
 
@@ -89,7 +115,7 @@
 
 </main>
 <footer>
-    <section>
+    <section id="contact_info">
         <h3>Contact info</h3>
         email <code>mick3l@yandex.ru</code> phone <code>+71234567890</code>
     </section>
