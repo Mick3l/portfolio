@@ -9,17 +9,28 @@
 </head>
 <body class="body">
 <header class="header">
-    <div class="overview">
-        <span class="links">
-            <a class="links__github" href="https://github.com/Mick3l">
-                <img src="resource/github_logo.png" class="links__github_img"/>
-            </a>
+    <a class="links__github" href="https://github.com/Mick3l">
+        <img src="resource/github_logo.png" class="links__github_img" width="50" height="50"/>
+    </a>
 
-            <a class="links__linkedin" href="blocked in russia :((">
-                <img class="links__linkedin_img" src="resource/linkedin_logo.png"/>
-            </a>
-        </span>
-
+    <a class="links__linkedin" href="blocked in russia :((">
+        <img class="links__linkedin_img" src="resource/linkedin_logo.png" width="57" height="50"/>
+    </a>
+    <p class="header__greeting">Hello there 👋</p>
+</header>
+<main class="main">
+    <div class="about">
+        <aside class="side_menu">
+            <nav>
+                <ul type="none">
+                    <li><a class="side_menu__option" href="#about_me"><h1>About me</h1></a></li>
+                    <li><a class="side_menu__option" href="#work_exp"><h1>Work experience</h1></a></li>
+                    <li><a class="side_menu__option" href="#work_exp"><h1>Education</h1></a></li>
+                    <li><a class="side_menu__option" href="#projects"><h1>Projects</h1></a></li>
+                    <li><a class="side_menu__option" href="#contact_info"><h1>Contact info</h1></a></li>
+                </ul>
+            </nav>
+        </aside>
         <div class="about_me">
             <h3 class="about_me__heading">About me</h3>
             <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
@@ -31,40 +42,24 @@
         </div>
     </div>
 
-    <aside class="side_menu">
-        <p class="side_menu__greeting">Hello there 👋</p>
-        <nav>
-            <ul type="none">
-                <li><a class="side_menu__option" href="#about_me"><h1>About me</h1></a></li>
-                <li><a class="side_menu__option" href="#work_exp"><h1>Work experience</h1></a></li>
-                <li><a class="side_menu__option" href="#work_exp"><h1>Education</h1></a></li>
-                <li><a class="side_menu__option" href="#projects"><h1>Projects</h1></a></li>
-                <li><a class="side_menu__option" href="#contact_info"><h1>Contact info</h1></a></li>
-            </ul>
-        </nav>
-    </aside>
-</header>
-<main class="main">
     <article id="info">
         <section id="work_exp">
             <h3 class="info__heading">Work experience</h3>
             <ol type="1">
-                <li>
-                    <div class="work_exp_place">
-                        <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
-                        <i class="work_exp__date">sep 2023 - feb 2024</i>
-                    </div>
+                <li class="work_exp_place">
+                    <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
+                    <p class="work_exp__date"><i>sep 2023 &mdash; feb 2024</i></p>
                     <p class="work_exp__group">Internship in mobile geodata rendering group </p>
-                    <ul>
+                    <ul class="work_exp__achievements">
                         <li><strong>Improved</strong> development by introducing deep links into testing app</li>
                         <li><strong>Introduced</strong> new helpful logs that are rendered on map in each tile</li>
                     </ul>
                 </li>
-                <li>
+                <li class="work_exp_place">
                     <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
-                    <i class="work_exp__date">feb 2024 - now</i>
+                    <p class="work_exp__date"><i>feb 2024 &mdash; now</i></p>
                     <p class="work_exp__group">Geosearch monetization group</p>
-                    <ul>
+                    <ul class="work_exp__achievements">
                         <li><strong>Developed</strong> adverts in suggest from scratch</li>
                         <li><strong>Configured</strong> the delivery of advert data from the database to production</li>
                         <li><strong>Introduced</strong> new ads server</li>
@@ -82,16 +77,17 @@
         <section id="projects">
             <h3 class="info__heading">Projects</h3>
             <div class="projects">
-                <a href="https://github.com/Mick3l/gpu_mandelbrot_render">
+                <a href="https://github.com/Mick3l/gpu_mandelbrot_render" class="project">
                     <div>
-                        <img src="resource/mandelbrot_project.png" width="300" height="300"/>
-                        <p>WinAPI application rendering Mandelbrot fractal on GPU</p>
+                        <img src="resource/mandelbrot_project.png" class="project__image"/>
+                        <p class="project__desc">WinAPI application rendering Mandelbrot fractal on GPU</p>
                     </div>
                 </a>
-                <a href="https://github.com/Mick3l/point_separator/tree/main">
+                <a href="https://github.com/Mick3l/point_separator/tree/main" class="project">
                     <div>
-                        <img src="resource/dot_separator_project.png" width="300" height="300"/>
-                        <p>TKinter application that predicts the separation of points based on ML</p>
+                        <img src="resource/dot_separator_project.png" class="project__image"/>
+                        <p class="project__desc">TKinter application that predicts the separation of points based on
+                            ML</p>
                     </div>
                 </a>
             </div>
@@ -99,6 +95,42 @@
         </section>
 
     </article>
+
+    <table class="dummy-table">
+        <thead class="dummy-table-head">
+        <tr>
+            <th class="dummy-table-header">Невероятно важная таблица</th>
+            <th class="dummy-table-header">Название столбца 1</th>
+            <th class="dummy-table-header">Название столбца 2</th>
+            <th class="dummy-table-header">Название столбца 3</th>
+            <th class="dummy-table-header">Название столбца 4</th>
+        </tr>
+        </thead>
+        <tbody class="dummy-table-body">
+        <tr>
+            <th class="dummy-table-header">Название строки 1</th>
+            <td class="dummy-table-cell">Строка 1, Столбец 1</td>
+            <td class="dummy-table-cell">Строка 1, Столбец 2</td>
+            <td class="dummy-table-cell">Строка 1, Столбец 3</td>
+            <td class="dummy-table-cell">Строка 1, Столбец 4</td>
+        </tr>
+        <tr>
+            <th class="dummy-table-header">Название строки 2</th>
+            <td class="dummy-table-cell">Строка 2, Столбец 1</td>
+            <td class="dummy-table-cell">Строка 2, Столбец 2</td>
+            <td class="dummy-table-cell">Строка 2, Столбец 3</td>
+            <td class="dummy-table-cell">Строка 2, Столбец 4</td>
+        </tr>
+        <tr>
+            <th class="dummy-table-header">Название строки 3</th>
+            <td class="dummy-table-cell">Строка 3, Столбец 1</td>
+            <td class="dummy-table-cell">Строка 3, Столбец 2</td>
+            <td class="dummy-table-cell">Строка 3, Столбец 3</td>
+            <td class="dummy-table-cell">Строка 3, Столбец 4</td>
+        </tr>
+        </tbody>
+
+    </table>
 
 </main>
 <footer>
