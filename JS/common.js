@@ -5,7 +5,8 @@
         '/portfolio/index.html': 'side_menu_about_me',
         '/portfolio/work_experience.html': 'side_menu_work_exp',
         '/portfolio/projects.html': 'side_menu_projects',
-        '/portfolio/education.html': 'side_menu_education'
+        '/portfolio/education.html': 'side_menu_education',
+        '/portfolio/table_constructor.html': 'side_menu_table_constructor'
     }
 
     window.onload = function () {
