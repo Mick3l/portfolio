@@ -7,7 +7,7 @@
     <meta name="description" content="Mike Tsyganove portfolio. My projects, books and future plans">
     <script src="JS/common.js"></script>
     <link rel="stylesheet" href="CSS/common.css">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/work_experience.css">
 </head>
 <body class="body">
 <header class="header">
@@ -36,15 +36,30 @@
                 </ul>
             </nav>
         </aside>
-        <div id="about_me" class="about_me">
-            <h3 class="about_me__heading">About me</h3>
-            <p>Backend developer with experience in <b>Yandex</b> geosearch monetization team. Proficient in C++,
-                Python
-                and Databases. Eager to contribute to innovative projects in Search Engines and NLP sphere
-                and
-                improve
-                user experiences through effective backend architecture</p>
-        </div>
+        <section class="work_exp" id="work_exp">
+            <h3 class="info__heading">Work experience</h3>
+            <ol type="1">
+                <li class="work_exp_place">
+                    <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
+                    <p class="work_exp__date"><i>sep 2023 &mdash; feb 2024</i></p>
+                    <p class="work_exp__group">Internship in mobile geodata rendering group </p>
+                    <ul class="work_exp__achievements">
+                        <li><strong>Improved</strong> development by introducing deep links into testing app</li>
+                        <li><strong>Introduced</strong> new helpful logs that are rendered on map in each tile</li>
+                    </ul>
+                </li>
+                <li class="work_exp_place">
+                    <img src="resource/yandex_logo.png" class="work_exp__yandex"/>
+                    <p class="work_exp__date"><i>feb 2024 &mdash; now</i></p>
+                    <p class="work_exp__group">Geosearch monetization group</p>
+                    <ul class="work_exp__achievements">
+                        <li><strong>Developed</strong> adverts in suggest from scratch</li>
+                        <li><strong>Configured</strong> the delivery of advert data from the database to production</li>
+                        <li><strong>Introduced</strong> new ads server</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
     </div>
 
 </main>

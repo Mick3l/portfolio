@@ -1,0 +1,83 @@
+.work_exp {
+    grid-column: 1 / 13;
+}
+
+.work_exp_place {
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.work_exp__yandex {
+    margin: 20px;
+    max-width: 80px;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+}
+
+.work_exp__date {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    padding-left: 30px;
+}
+
+.work_exp__date i {
+    background-color: black;
+    color: white;
+}
+
+.work_exp__group {
+    margin-top: 10px;
+    padding-left: 30px;
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+}
+
+.work_exp__achievements {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+@media screen and (min-width: 600px) {
+    .work_exp {
+        grid-column: 1 / 9;
+    }
+
+    .work_exp_place {
+        grid-gap: 10px;
+    }
+
+    .work_exp_place:not(:last-child) {
+        border-bottom: solid 0.1rem;
+        border-image: linear-gradient(to right, honeydew 100px, transparent 50%) 100% 1;
+    }
+
+    .work_exp__yandex {
+        max-width: 90px;
+    }
+
+    .work_exp__date {
+        grid-column: 3 / 12;
+        grid-row-start: 1;
+        text-align: right;
+    }
+
+    .work_exp__group {
+        margin-top: 10px;
+        padding-left: 30px;
+        grid-row: 2;
+        grid-column: 1 / 13;
+    }
+
+    .work_exp__achievements {
+        grid-column: 1 / 13;
+        grid-row-start: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .work_exp__yandex {
+        max-width: 100px;
+    }
+}
