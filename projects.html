@@ -8,6 +8,13 @@
     <script src="JS/common.js"></script>
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/projects.css">
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="body">
 <header class="header">
@@ -41,20 +48,39 @@
             </nav>
         </aside>
 
-        <section id="projects">
-            <h3 class="info__heading">Projects</h3>
-            <div class="projects">
-                <a href="https://github.com/Mick3l/gpu_mandelbrot_render" class="project">
-                    <img src="resource/mandelbrot_project.png" class="project__image"/>
-                    <p class="project__desc">WinAPI application rendering Mandelbrot fractal on GPU</p>
-                </a>
-                <a href="https://github.com/Mick3l/point_separator/tree/main" class="project">
-                    <img src="resource/dot_separator_project.png" class="project__image"/>
-                    <p class="project__desc">TKinter application that predicts the separation of points based on
-                        ML</p>
-                </a>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="https://github.com/Mick3l/gpu_mandelbrot_render" class="project">
+                        <img src="resource/mandelbrot_project.png" class="project__image"/>
+                        <p class="project__desc">WinAPI application rendering Mandelbrot fractal on GPU</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/Mick3l/point_separator" class="project">
+                        <img src="resource/dot_separator_project.png" class="project__image"/>
+                        <p class="project__desc">TKinter application that predicts the separation of points based on
+                            ML</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/Mick3l/SnakeGame" class="project">
+                        <img src="resource/snake_game.png" class="project__image"/>
+                        <p class="project__desc">Simple snake game in python using TKinter</p>
+                    </a>
+                </div>
             </div>
-        </section>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </div>
 
 </main>
@@ -66,6 +92,7 @@
 </footer>
 
 <p id="loadTime"></p>
+<script src="JS/swiper.js"></script>
 </body>
 
 </html>
