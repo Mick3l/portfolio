@@ -6,7 +6,8 @@
         '/portfolio/work_experience.html': 'side_menu_work_exp',
         '/portfolio/projects.html': 'side_menu_projects',
         '/portfolio/education.html': 'side_menu_education',
-        '/portfolio/table_constructor.html': 'side_menu_table_constructor'
+        '/portfolio/table_constructor.html': 'side_menu_table_constructor',
+        '/portfolio/users.html': 'side_menu_users'
     }
 
     window.onload = function () {

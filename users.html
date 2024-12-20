@@ -8,7 +8,7 @@
     <script src="JS/common.js"></script>
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/button.css">
-    <link rel="stylesheet" href="CSS/table_constructor.css">
+    <link rel="stylesheet" href="CSS/users.css">
 </head>
 <body class="body">
 <header class="header">
@@ -41,34 +41,22 @@
                 </ul>
             </nav>
         </aside>
-        <div id="description" class="description">
-            <h3 class="description__heading">Description</h3>
-            <p>Simple table constructor. Choose row number and column number. Then press <b><em>Create table</em></b> button.
-                You can type anything in table cells. After your work is finished, you can save the table by clicking on
-                <b><em>Save</em></b> button. If you want to restore saved table, you can use <b><em>Load</em></b> button. Loaded
-                tables are saved between sessions, e.g. between computer reboots</p>
+        <div id="users_list" class="users_list">
+            <h3 class="users_list__heading">Users list</h3>
+            <button id="users_list__load" class="button">Load users list</button>
+            <div id="preloader">
+                <div>G</div>
+                <div>N</div>
+                <div>I</div>
+                <div>D</div>
+                <div>A</div>
+                <div>O</div>
+                <div>L</div>
+            </div>
+            <div id="error_msg" class="error_msg"></div>
         </div>
     </div>
-
-    <table id="table"></table>
-
-    <form id="table-form">
-        <div>
-            <label for="table-form__rows">Row number:</label>
-            <input type="number" id="table-form__rows" min="1" required>
-        </div>
-
-
-        <div>
-            <label for="table-form__cols">Column number:</label>
-            <input type="number" id="table-form__cols" min="1" required>
-        </div>
-
-        <button type="submit" class="button">Create table</button>
-        <button id="save-table" class="button">Save</button>
-        <button id="load-table" class="button">Load</button>
-    </form>
-
+    <div id="fetched_users"></div>
 </main>
 <footer>
     <section id="contact_info">
@@ -78,7 +66,7 @@
 </footer>
 
 <p id="loadTime"></p>
-<script src="JS/table_constructor.js"></script>
+<script src="JS/users.js"></script>
 </body>
 
 </html>
